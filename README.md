@@ -20,30 +20,33 @@ A full season, GameCenter-style web app that pits my AI model against FanDuel’
 - Redis: Hot cache and lightweight pubsub for “locked” events and live blobs.
 
 ## Monorepo Layout
+<pre>
 .
-+-- src
-|   +-- Api
-|   |   +-- Api.csproj
-|   |   `-- Program.cs
-|   +-- Worker.Odds
-|   |   +-- Worker.Odds.csproj
-|   |   `-- Program.cs
-|   +-- Worker.LockSettle
-|   |   +-- Worker.LockSettle.csproj
-|   |   `-- Program.cs
-|   `-- Shared
-|       +-- Shared.csproj
-|       `-- Db.cs
-+-- ui-next
-+-- models
-|   `-- predictor-python
-+-- sql
-|   `-- 001_init.sql
-+-- docker
-|   +-- Api.Dockerfile
-|   +-- Worker.Odds.Dockerfile
-|   `-- Worker.LockSettle.Dockerfile
-`-- docker-compose.yml
+├── src
+│   ├── Api
+│   │   ├── Api.csproj
+│   │   └── Program.cs
+│   ├── Worker.Odds
+│   │   ├── Worker.Odds.csproj
+│   │   └── Program.cs
+│   ├── Worker.LockSettle
+│   │   ├── Worker.LockSettle.csproj
+│   │   └── Program.cs
+│   └── Shared
+│       ├── Shared.csproj
+│       └── Db.cs
+├── ui-next
+├── models
+│   └── predictor-python
+├── sql
+│   └── 001_init.sql
+├── docker
+│   ├── Api.Dockerfile
+│   ├── Worker.Odds.Dockerfile
+│   └── Worker.LockSettle.Dockerfile
+└── docker-compose.yml
+</pre>
+
 
 
 
