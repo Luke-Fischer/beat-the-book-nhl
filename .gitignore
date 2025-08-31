@@ -1,0 +1,112 @@
+# --- OS / Editor junk ---
+.DS_Store
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+Icon?
+*.swp
+*.swo
+*.orig
+
+# JetBrains / Rider
+.idea/
+*.iml
+
+# VS Code (keep common project files if you want)
+.vscode/*
+!.vscode/extensions.json
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+
+# --- Env / Secrets ---
+.env
+.env.*
+!.env.example
+*.secret
+*.secrets
+secrets.json
+
+# --- Logs / PIDs ---
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+pnpm-debug.log*
+*.pid
+*.pid.lock
+
+# --- Node / Next.js (ui-next) ---
+node_modules/
+.npm/
+.pnp/
+.pnp.js
+.cache/
+.next/
+.next-cache/
+out/
+coverage/
+.turbo/
+.vercel/
+
+# --- Monorepo tools ---
+pnpm-store/
+.pnpm-debug.log*
+
+# --- .NET / C# ---
+**/bin/
+**/obj/
+**/TestResults/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+*.nupkg
+*.snupkg
+*.dll
+*.exe
+
+# Optional: local appsettings variants (keep prod templates in repo)
+appsettings.*.Local.json
+
+# --- Python (predictor) ---
+__pycache__/
+*.py[cod]
+*$py.class
+.venv/
+venv/
+env/
+.pytest_cache/
+.tox/
+.mypy_cache/
+.pytype/
+.coverage
+.coverage.*
+htmlcov/
+dist/
+build/
+*.egg-info/
+
+# --- Databases / data dumps ---
+*.sqlite
+*.sqlite3
+*.db
+*.db-wal
+*.db-shm
+*.dump
+*.bak
+
+# --- Docker / Compose artifacts (if any local)
+docker/*.log
+pgdata/
+redis-data/
+
+# --- Misc / temp ---
+tmp/
+temp/
+*.tmp
+*.temp
+*.cache
+*.tgz
+*.tar.gz
+*.zip
